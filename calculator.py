@@ -35,5 +35,5 @@ def minimum_score(mt1_score, mt2_score, desired_grade, ec_points = 0, recovery_p
     print('\n'+str(score_needed) + ' out of 75')
    
     print('\nKeep in mind that this calculator does not take into account any beneficial grade bin shifts \nthat may occur at the end, and that there are still 4-5 EC points left in the semester.')
-    print('_____________ \n \nmade by shoumik :D')
+    print('_____________ \n made by shoumik :D')
 
