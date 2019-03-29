@@ -30,9 +30,9 @@ def minimum_score(mt1_score, mt2_score, desired_grade, ec_points = 0, recovery_p
             break
             
     score_needed = min(list_of_scenario_outcomes)
-    print('_____________')
+    print('__________________________')
     print('The minimum score you need on the final exam to earn a(n) ' + desired_grade + ' in CS61A is:' )
     print('\n'+str(score_needed) + ' out of 75')
     print('\nKeep in mind that this calculator does not take into account any beneficial grade bin shifts \nthat may occur at the end, and that there are still 4-5 EC points left in the semester.')
-    print('_____________ \n made by shoumik :D')
+    print('__________________________ \nMade by shoumik :D')
 
