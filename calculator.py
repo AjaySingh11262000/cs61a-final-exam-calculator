@@ -1,9 +1,9 @@
-def minimum_score(mt1_score, mt2_score, desired_grade, ec_points = 0,):
+def minimum_score(mt1_score, mt2_score, desired_grade, ec_points = 0, recovery_points = 0):
     grade_bins = {'A+':0, 'A':15,'A-':30,'B+':50,'B':75,'B-':95,'C+':105,'C':115,'C-':125,'D+':130,'D':135,'D-':140} # max points that can be lost for each letter grade 
     assert desired_grade in grade_bins, "Your desired_grade must be an uppercase string. For example,'b+' should be inputted as 'B+'" 
     assert mt1_score <= 30 and mt2_score <= 60, 'mt1_score and mt2_score should be ints or floats that are less than 30 and 60, respectively'
     list_of_scenario_outcomes = []
-    max_points_missed = grade_bins[desired_grade] + ec_points
+    max_points_missed = grade_bins[desired_grade] + ec_points + recovery_points
     
     #scenario 1: assumes no clobbering necessary:
     for i in reversed(range(76)):
