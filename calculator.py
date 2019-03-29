@@ -1,4 +1,4 @@
-def desired_score(mt1_score, mt2_score, desired_grade, ec_points = 0,):
+def minimum_score(mt1_score, mt2_score, desired_grade, ec_points = 0,):
     grade_bins = {'A+':0, 'A':15,'A-':30,'B+':50,'B':75,'B-':95,'C+':105,'C':115,'C-':125,'D+':130,'D':135,'D-':140} # max points that can be lost for each letter grade 
     assert desired_grade in grade_bins, "Your desired_grade must be an uppercase string. For example,'b+' should be inputted as 'B+'" 
     assert mt1_score <= 30 and mt2_score <= 60, 'mt1_score and mt2_score should be ints or floats that are less than 30 and 60, respectively'
